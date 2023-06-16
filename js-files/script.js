@@ -9,41 +9,45 @@ document
 function addSubject() {
   const subjectName = document.getElementById("subjectName").value;
   const grade = document.getElementById("grade").value;
-  const score = parseFloat(document.getElementById("score").value);
   const creditUnits = parseInt(document.getElementById("courseunit").value);
+  const semester = document.getElementById("semester").value;
 
   const table = document.getElementById("gradeTable");
   const row = table.insertRow();
 
   row.insertCell().textContent = subjectName;
   row.insertCell().textContent = grade.toString();
-  row.insertCell().textContent = score.toString();
   row.insertCell().textContent = creditUnits.toString();
+  row.insertCell().textContent = semester;
 
   // clear input fields
   document.getElementById("subjectName").value = "";
   document.getElementById("grade").value = "";
-  document.getElementById("score").value = "";
   document.getElementById("courseunit").value = "";
+  document.getElementById("semester").value = "";
 }
+
 function calculateGPA() {
   const rows = Array.from(document.querySelectorAll("#gradeTable tr"));
 
-  let totalCreditUnits = 0;
   let totalGradepoints = 0;
+  let totalCreditUnits = 0;
 
   for (let i = 1; i < rows.length; i++) {
     const cells = rows[i].cells;
 
     const grade = cells[1].textContent.toLowerCase();
-    const score = parseFloat(cells[2].textContent);
-    const creditUnits = parseInt(cells[3].textContent);
+    const creditUnits = parseInt(cells[2].textContent);
 
     let gradePoints = 0;
     if (grade === "a") {
       gradePoints = 5.0;
+    } else if (grade === "b+") {
+      gradePoints = 4.5;
     } else if (grade === "b") {
       gradePoints = 4.0;
+    } else if (grade === "c+") {
+      gradePoints = 3.5;
     } else if (grade === "c") {
       gradePoints = 3.0;
     } else if (grade === "d") {
@@ -56,7 +60,7 @@ function calculateGPA() {
       gradePoints = "N/A";
     }
 
-    const gradePoint = ((gradePoints * score) / 100) * creditUnits;
+    const gradePoint = gradePoints * creditUnits;
 
     totalGradepoints += gradePoint;
     totalCreditUnits += creditUnits;
@@ -71,21 +75,28 @@ function calculateGPA() {
 function calculateCGPA() {
   const rows = Array.from(document.querySelectorAll("#gradeTable tr"));
 
-  let totalCreditUnits = 0;
-  let totalGradepoints = 0;
+  let firstSemesterGradePoints = 0;
+  let firstSemesterCreditUnits = 0;
+  let secondSemesterGradePoints = 0;
+  let secondSemesterCreditUnits = 0;
 
   for (let i = 1; i < rows.length; i++) {
     const cells = rows[i].cells;
 
     const grade = cells[1].textContent.toLowerCase();
-    const score = parseFloat(cells[2].textContent);
-    const creditUnits = parseInt(cells[3].textContent);
+    const creditUnits = parseInt(cells[2].textContent);
+    const semester = cells[3].textContent.toLowerCase();
 
     let gradePoints = 0;
+
     if (grade === "a") {
       gradePoints = 5.0;
+    } else if (grade === "b+") {
+      gradePoints = 4.5;
     } else if (grade === "b") {
       gradePoints = 4.0;
+    } else if (grade === "c+") {
+      gradePoints = 3.5;
     } else if (grade === "c") {
       gradePoints = 3.0;
     } else if (grade === "d") {
@@ -98,12 +109,22 @@ function calculateCGPA() {
       gradePoints = "N/A";
     }
 
-    const gradePoint = ((gradePoints * score) / 100) * creditUnits;
+    const gradePoint = gradePoints * creditUnits;
 
-    totalGradepoints += gradePoint;
-    totalCreditUnits += creditUnits;
+    if (semester === "first") {
+      firstSemesterGradePoints += gradePoint;
+      firstSemesterCreditUnits += creditUnits;
+    } else if (semester === "second") {
+      secondSemesterGradePoints += gradePoint;
+      secondSemesterCreditUnits += creditUnits;
+    }
   }
-  const cgpa = totalGradepoints / totalCreditUnits;
+  const firstSemesterGPA = firstSemesterGradePoints / firstSemesterCreditUnits;
+
+  const secondSemesterGPA =
+    secondSemesterGradePoints / secondSemesterCreditUnits;
+
+  const cgpa = (firstSemesterGPA + secondSemesterGPA) / 2;
 
   //display gpa result
   const cgpaResult = document.getElementById("cgpaResult");

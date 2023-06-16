@@ -1,0 +1,12 @@
+{
+  "name": "cgpa-calculator",
+  "version": "1.0.0",
+  "description": "A CGPA calculator web application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Joe Code",
+  "license": "MIT",
+  "dependencies": {}
+}

@@ -4,9 +4,11 @@
   "description": "A CGPA calculator web application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node js-files/script.js"
   },
   "author": "Joe Code",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
 }

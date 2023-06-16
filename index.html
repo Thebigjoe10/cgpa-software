@@ -15,12 +15,14 @@
    <label for="grade">Grade Obtained:</label>
    <input type="text" id="grade" required>
    <br><br>
-   <label for="score">Score Obtained:
-   </label>
-   <input type="text" id="score" required>
-   <br><br>
    <label for="courseunit">CourseUnit:</label>
    <input type="number" name="CourseUnit" id="courseunit" required>
+   <br><br>
+   <label for="semester"></label>
+   <select name="semester" id="semester">
+    <option value="first">First Semester</option>
+    <option value="second">Second semester</option>
+   </select>
 
    <button id="addSubjectBtn">Add Course</button>
   </form>
@@ -31,8 +33,8 @@
    <tr>
     <th>Subject Name</th>
     <th>Grade Obtained</th>
-    <th>Score Obtained</th>
     <th>Credit Units</th>
+    <th>Semester</th>
    </tr>
   </table>
   <button id="calculateGPABtn">Calculate GPA</button>

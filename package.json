@@ -2,7 +2,7 @@
   "name": "cgpa-calculator",
   "version": "1.0.0",
   "description": "A CGPA calculator web application",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "start": "node js-files/script.js"
   },

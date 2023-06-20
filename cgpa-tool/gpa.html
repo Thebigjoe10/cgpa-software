@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>CGPA CALCULATOR</title>
+</head>
+
+<body>
+ <div class="container" align="center">
+  <form action="" id="gradeForm">
+   <label for="subjectName">Course Name:</label>
+   <input type="text" id="subjectName" required>
+   <br><br>
+   <label for="grade">Grade Obtained:</label>
+   <input type="text" id="grade" required>
+   <br><br>
+   <label for="courseunit">CourseUnit:</label>
+   <input type="number" name="CourseUnit" id="courseunit" required>
+   <br><br>
+   <label for="semester"></label>
+   <select name="semester" id="semester">
+    <option value="first">First Semester</option>
+    <option value="second">Second semester</option>
+   </select>
+
+   <button id="addSubjectBtn">Add Course</button>
+  </form>
+
+  <br>
+
+  <table id="gradeTable">
+   <tr>
+    <th>Subject Name</th>
+    <th>Grade Obtained</th>
+    <th>Credit Units</th>
+    <th>Semester</th>
+   </tr>
+  </table>
+  <button id="calculateGPABtn">Calculate GPA</button>
+  <button id="calculateCGPABtn">Calculate CGPA</button>
+  <p id="gpaResult"></p>
+  <p id="cgpaResult"></p>
+ </div>
+
+ <script src="js-files/script.js"></script>
+</body>
+
+</html>

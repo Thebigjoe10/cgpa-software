@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPA/CGPA-CALCULATOR</title>
+  <link rel="stylesheet" href="output.css">
+
+  <style>
+    .border-b-2 {
+      border-bottom-width: 2px;
+    }
+  </style>
+
+</head>
+
+<body class="xl:mt-10 xl:mx-12">
+  <header>
+    <div class="navbar bg-gray-200 xl:rounded-t-xl">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li tabindex="0">
+              <details>
+                <summary>Calculators</summary>
+                <ul class="p-2">
+                  <li><a>Gpa Calculator</a></li>
+                  <li><a>Cgpa Calculator</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>5.0 Scale</a></li>
+            <li tabindex="0">
+              <details>
+                <summary>Guides</summary>
+                <ul class="p-2">
+                  <li><a>Calculate GPA quickly</a></li>
+                  <li><a>How to raise your Gpa</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="">FAQ</a></li>
+          </ul>
+        </div>
+        <a href="" class="flex items-center text-xl">
+          <img src="img/icons8-gpa-calculator-50.png" alt="Icon" class="w-8 h-8 mr-2">
+          <span class="text">GpaCalculator</span>
+        </a>
+
+
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li tabindex="0">
+            <details>
+              <summary>Calculators</summary>
+              <ul class="p-2">
+                <li><a>Gpa Calculator</a></li>
+                <li><a>Cgpa Calculator</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>5.0 Scale</a></li>
+          <li tabindex="0">
+            <details>
+              <summary>Guides</summary>
+              <ul class="p-2">
+                <li><a>How to Calculate your Gpa</a></li>
+                <li><a>How to raise your Gpa</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <label class="relative block">
+          <span class="sr-only">Search</span>
+          <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></svg>
+          </span>
+          <input
+            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500 focus:ring-1 sm:text-sm"
+            placeholder="Search for anything..." type="text" name="search" />
+        </label>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="hero min-h-screen bg-darkBlue overflow-hidden">
+      <div class=" bg-opacity-20 backdrop-filter backdrop-blur-lg">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="image3.svg" class="max-w-sm" alt="" />
+          <div>
+            <h1 class="lg:text-5xl text-3xl font-bold  text-white">Gpa Calculator!</h1>
+            <p class="py-6 text-2xl  text-white">This easy-to-use GPA calculator allows you to quickly calculate grades
+              in
+              university. After
+              each calculation, you can download the table with the result in a pdf file. Use this GPA calculator on any
+              device and completely free!
+            </p>
+            <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+              <div
+                class="absolute inset-0 w-3 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full">
+              </div>
+              <span class="relative text-black group-hover:text-white">Get Started</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="pb-20 border-b-2"></div>
+  <section>
+    <div class="hero min-h-[70vh] lg:h-[70vh] bg-base-100">
+      <div class="hero-content flex-col lg:flex-row gap-4">
+        <img src="image2.svg" class="max-w-sm  my-8 lg:my-0 lg:mr-8" alt="" />
+        <div>
+          <h1 class="lg:text-5xl text-3xl font-bold font-body  text-gray-900" title="University GPA Calculator!">
+            University GPA
+            Calculator!</h1>
+          <p class="py-6 font-body lg:text-2xl text-xl  text-gray-600">Calculating your Grade Point Average (GPA) in
+            college is
+            crucial for
+            monitoring your academic performance. The GPA
+            Calculator enables you to efficiently determine your average grade. This tool is applicable to all students,
+            irrespective of their institution or field of study. By utilizing the GPA Calculator, you can effectively
+            monitor your
+            semester achievements and overall academic progress throughout your college tenure.</p>
+          <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+            <div class="absolute inset-0 w-3 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full">
+            </div>
+            <span class="relative text-black group-hover:text-white">Get Started</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pb-20 border-b-2"></div>
+  <section>
+    <div class="hero min-h-[70vh] lg:h-[70vh] bg-base-200">
+      <div class="hero-content flex-col lg:flex-row-reverse gap-4">
+        <img src="image.svg" class="max-w-sm my-8 lg:my-0 lg:mr-8" alt="" />
+        <div>
+          <h1 class="lg:text-5xl text-3xl font-bold font-body" title="University CGPA Calculator!">University CGPA
+            Calculator!</h1>
+          <p class="py-6 font-body lg:text-2xl text-xl ">Calculating your Grade Point Average (GPA) in universities is
+            crucial for
+            monitoring your academic performance. The GPA
+            Calculator enables you to efficiently determine your average grade. This tool is applicable to all students,
+            irrespective of their institution or field of study. By utilizing the GPA Calculator, you can effectively
+            monitor your
+            semester achievements and overall academic progress throughout your college tenure.</p>
+          <button class="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+
+            <div class="absolute inset-0 w-3 bg-amber-300 transition-all duration-[250ms] ease-out group-hover:w-full">
+            </div>
+
+            <span class="relative text-black group-hover:text-white" title="">Get Started</span>
+
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pb-20 border-b-2"></div>
+  <section class="bg-base-100">
+    <div class="hero min-h-[70vh] lg:h-[70vh]">
+      <div class="hero-content flex-col lg:flex-row gap-4">
+        <div>
+          <h5 class="font-body mb-6 lg:text-3xl text-2xl">Convert now</h5>
+          <h2 class="mb-4">
+            <a href="" title="GPA Scale" class="font-body font-bold lg:text-5xl text-3xl">The 5.0 GPA Scale</a>
+          </h2>
+          <p class="lg:text-2xl text-xl  ">Simplify the process of converting grades to the 5.0 scale with our dedicated
+            tool, reducing tedious calculations and providing educational insights.</p>
+          <button class="my-4 group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+
+            <div class="absolute inset-0 w-3 bg-amber-300 transition-all duration-[250ms] ease-out group-hover:w-full">
+            </div>
+
+            <span class="relative text-black group-hover:text-white" title="The 5.0 GPA Scale">Get Started</span>
+
+          </button>
+        </div>
+        <aside class="p-4 sm:self-start w-full">
+          <div>
+            <h5 class="mb-8 whitespace-nowrap lg:text-3xl text-2xl">Common GPA conversions</h5>
+            <ul class="space-y-2">
+              <li class="pb-4 border-b-2 lg:text-2xl text-xl">
+                <a href="" title="4.0 GPA to Letter Grade" class="whitespace-nowrap">
+                  <span class="flex items-center">
+                    5.0 GPA to Letter Grade
+                    <span class="ml-auto">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="pb-4 border-b-2 lg:text-2xl text-xl">
+                <a href="" title="4.0 GPA to Letter Grade" class="whitespace-nowrap">
+                  <span class="flex items-center">
+                    4.0 GPA to Letter Grade
+                    <span class="ml-auto">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="pb-4 border-b-2 lg:text-2xl text-xl">
+                <a href="" title="4.0 GPA to Letter Grade" class="whitespace-nowrap">
+                  <span class="flex items-center">
+                    3.0 GPA to Letter Grade
+                    <span class="ml-auto">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="pb-4 lg:text-2xl text-xl">
+                <a href="" title="4.0 GPA to Letter Grade" class="whitespace-nowrap">
+                  <span class="flex items-center">
+                    See all conversions
+                    <span class="ml-auto">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <div class="lg:border-b-2"></div>
+  <div class="lg:pb-52 lg:border-b-2"></div>
+  <div class="pb-20"></div>
+  <section class="">
+    <div class="min-h-[30vh] lg:h-[30vh]">
+      <div class="">
+        <h2 class="lg:text-3xl text-2xl pl-12 pb-4 text-gray-600">Helpful Guides</h2>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:flex sm:flex-wrap sm:justify-center">
+        <div class="bg-base-100 rounded-lg shadow-md flex flex-col">
+          <article class="p-4" itemscope itemtype="https://schema.org/Article">
+            <a href="" class="flex items-center space-x-4" itemprop="url">
+              <figure class="w-16 h-16 sm:w-24 sm:h-24">
+                <svg class="w-full h-full" viewBox="0 0 180 180" preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <!-- SVG code here -->
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M146.554341 100.5H-.6926214" stroke="#C1F2F4" stroke-width="3.88125" />
+                    <path fill="#C1F2F4" fill-rule="nonzero"
+                      d="M123.150707 99.316549h-15.7903904V25.9604952h15.7903904zm-30.7850475 0H76.5752691V25.9604952h15.7903904zm-40.2465992-.0703864H36.3286699V40.6129787h15.7903904z" />
+                    <path fill="#B0EAEA" fill-rule="nonzero"
+                      d="M134.36059 99.2461627h-11.2603604V40.6129788H134.36059zm-68.73383242-.23327083L53.9735271 97.30035924 65.80374103 16.7995808l11.65323047 1.7125326zm41.84965752.30598227H91.6860247v-88.8538117h15.7903904zm-70.4586624-.05346824H26.2751101V28.1048678h10.7426426z" />
+                    <path d="M107.466967 17.232287H91.6765766m15.7903904 3.4869955H91.6765766" stroke="#C1F2F4"
+                      stroke-width=".646875" />
+                    <path
+                      d="M52.0711712 45.3865471h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.7452915h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.7452914h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.7452915h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961"
+                      stroke="#B0EAEA" stroke-width=".646875" />
+                    <path d="M107.466967 88.2636771H91.6765766m15.7903904 3.3578476H91.6765766" stroke="#C1F2F4"
+                      stroke-width=".646875" />
+                    <path
+                      d="M115.362162 91.6215247c1.423724 0 2.718018-1.1623319 2.718018-2.7121077V36.2170404c0-1.4206278-1.164865-2.7121077-2.718018-2.7121077-1.423724 0-2.718018 1.1623319-2.718018 2.7121077V89.038565c0 1.4206278 1.164865 2.5829597 2.718018 2.5829597z"
+                      stroke="#B0EAEA" stroke-width=".646875" />
+                    <path fill="#C1F2F4" fill-rule="nonzero"
+                      d="M26.4948799 99.316549H10.7044895V25.9604952h15.7903904z" />
+                    <path
+                      d="M18.5489489 91.6215247c1.4237238 0 2.7180181-1.1623319 2.7180181-2.7121077V36.2170404c0-1.4206278-1.1648649-2.7121077-2.7180181-2.7121077-1.4237237 0-2.718018 1.1623319-2.718018 2.7121077V89.038565c0 1.4206278 1.2942943 2.5829597 2.718018 2.5829597z"
+                      stroke="#B0EAEA" stroke-width=".646875" />
+                    <path d="M128.822823 49.0026906v41.3273542" stroke="#C1F2F4" stroke-width=".646875" />
+                    <path fill="#19A1F4" fill-rule="nonzero"
+                      d="M169.17888332 180.0493494h-65.8666667v-12.16h65.8666667z" />
+                    <path fill="#0D2451" fill-rule="nonzero"
+                      d="M180.195191 167.8803369h-65.8666667v-12.16h65.8666667z" />
+                    <path
+                      d="M114.2666667 155.8114286h65.8666666V160.48c-2.0583333-.5428571-5.3083333-1.1942857-9.2083333-1.3028571-10.5083333-.3257143-12.4583333 3.5828571-20.9083333 3.9085714-11.2666667.5428571-13.65-6.1885714-25.2416667-4.56-4.55.6514286-8.2333333 2.1714286-10.6166667 3.3657143.1083334-2.0628572.1083334-4.1257143.1083334-6.08z"
+                      fill="#071D3F" fill-rule="nonzero" />
+                    <path fill="#FFC871" fill-rule="nonzero"
+                      d="M175.97604099 155.85214317h-65.8666667v-12.16h65.8666667z" />
+                    <path
+                      d="M116.7583333 152.66285714H169.3c1.4083333 0 2.4916667-1.08571428 2.4916667-2.49714285v-.76c0-1.41142858-1.0833334-2.49714286-2.4916667-2.49714286h-52.5416667c-1.4083333 0-2.4916666 1.08571428-2.4916666 2.49714286v.76c0 1.30285714 1.1916666 2.49714285 2.4916666 2.49714285z"
+                      stroke="#F5A73B" stroke-width=".54143888" />
+                    <path
+                      d="M159.0083333 167.9714286v12.16m1.8416667-12.16v12.16m-50.91666667-12.16v12.16m1.84166667-12.16v12.16"
+                      stroke="#1490ED" stroke-width=".54143888" />
+                    <path
+                      d="M104.7295186 179.9239631c8.203125 0 14.5217483-7.0075576 13.745777-15.000553l-1.7736486-17.62838706H92.86824324l-1.77364865 17.62838706c-.88682432 7.9929954 5.43179901 15.000553 13.63492401 15.000553z"
+                      fill="#F46C69" fill-rule="nonzero" />
+                    <path
+                      d="M97.9674831 153.20764977H86.99303209c-1.44108952 0-2.66047297 1.20442396-2.66047297 2.6278341v9.30691243c0 4.1607373 3.43644426 7.5550231 7.6488598 7.5550231h5.98606418"
+                      stroke="#EA5959" stroke-width=".5372551" />
+                    <path
+                      d="M104.7295186 179.9239631c-8.203125 0-14.52174833-7.0075576-13.74577705-15.000553l1.55194257-15.00055296c2.77132598.32847927 6.54032938 1.31391705 8.53568408 4.27023042 3.6581504 5.25566824-1.7736486 12.26322584 1.3302365 16.64294934 1.4410896 1.9708755 4.7666808 3.832258 13.8566301 2.6278341-.8868243 1.313917-3.2147382 4.3797235-7.4271537 5.6936405-1.2193835.5474655-2.660473.7664516-4.1015625.7664516z"
+                      fill="#EA5959" fill-rule="nonzero" />
+                    <g transform="translate(9 74)">
+                      <path
+                        d="M16.6833333.41153846c4.6878788 0 8.6863637 3.42948718 9.3757576 8.09358975l1.6545455 10.97435899H5.79090909L7.44545455 8.50512821C7.9969697 3.84102564 11.9954545.41153846 16.6833333.41153846z"
+                        fill="#19A1F4" fill-rule="nonzero" />
+                      <path fill="#19A1F4" fill-rule="nonzero"
+                        d="M79.4632691 19.51885704H16.5905418V.45090834h62.8727273z" />
+                      <path
+                        d="M79.4181818.41153846c4.6878788 0 8.6863637 3.42948718 9.3757576 8.09358975l1.6545454 10.97435899H68.5257576L70.180303 8.50512821c.5515152-4.66410257 4.55-8.09358975 9.2378788-8.09358975z"
+                        fill="#1490ED" fill-rule="nonzero" />
+                      <path d="M63.8378788 10.0141026H.82727273" stroke="#F5A73B" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path d="M79.4181818 10.0141026h-15.580303" stroke="#FFD385" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path d="M35.5727273 10.0141026v90.2641024" stroke="#F5A73B" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path fill="#FFD385" fill-rule="nonzero"
+                        d="M60.7488431 105.661677H10.4230855v-5.35h50.3257576z" />
+                      <path d="M53.0833333 97.2602564H17.9242424" stroke="#F5A73B" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path d="M79.4181818 19.4794872v22.4974359" stroke="#FFD385" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <ellipse fill="#FFD385" fill-rule="nonzero" cx="79.4181818" cy="43.8974359" rx="2.34393939"
+                        ry="2.33205128" />
+                    </g>
+                  </g>
+                </svg>
+              </figure>
+              <div class="flex flex-col">
+                <div class="flex items-center space-x-2">
+                  <span class="px-2 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">Guide</span>
+                  <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                </div>
+                <h3 class="mt-2 text-lg font-semibold" itemprop="name">How to calculate GPA</h3>
+                <p class="mt-1 text-sm  text-gray-600" itemprop="description">Compute—<em>GPA and
+                    CGPA</em>—with our
+                  concise guide & calculation basics</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="bg-base-100 rounded-lg shadow-md flex flex-col">
+          <article class="p-4" itemscope itemtype="https://schema.org/Article">
+            <a href="" class="flex items-center space-x-4" itemprop="url">
+              <figure class="w-16 h-16 sm:w-24 sm:h-24">
+                <svg class="w-full h-full" viewBox="0 0 180 180" preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <!-- SVG code here -->
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M146.554341 100.5H-.6926214" stroke="#C1F2F4" stroke-width="3.88125" />
+                    <path fill="#C1F2F4" fill-rule="nonzero"
+                      d="M123.150707 99.316549h-15.7903904V25.9604952h15.7903904zm-30.7850475 0H76.5752691V25.9604952h15.7903904zm-40.2465992-.0703864H36.3286699V40.6129787h15.7903904z" />
+                    <path fill="#B0EAEA" fill-rule="nonzero"
+                      d="M134.36059 99.2461627h-11.2603604V40.6129788H134.36059zm-68.73383242-.23327083L53.9735271 97.30035924 65.80374103 16.7995808l11.65323047 1.7125326zm41.84965752.30598227H91.6860247v-88.8538117h15.7903904zm-70.4586624-.05346824H26.2751101V28.1048678h10.7426426z" />
+                    <path d="M107.466967 17.232287H91.6765766m15.7903904 3.4869955H91.6765766" stroke="#C1F2F4"
+                      stroke-width=".646875" />
+                    <path
+                      d="M52.0711712 45.3865471h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.7452915h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.7452914h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.7452915h-15.660961m15.660961 3.6161435h-15.660961m15.660961 3.6161435h-15.660961"
+                      stroke="#B0EAEA" stroke-width=".646875" />
+                    <path d="M107.466967 88.2636771H91.6765766m15.7903904 3.3578476H91.6765766" stroke="#C1F2F4"
+                      stroke-width=".646875" />
+                    <path
+                      d="M115.362162 91.6215247c1.423724 0 2.718018-1.1623319 2.718018-2.7121077V36.2170404c0-1.4206278-1.164865-2.7121077-2.718018-2.7121077-1.423724 0-2.718018 1.1623319-2.718018 2.7121077V89.038565c0 1.4206278 1.164865 2.5829597 2.718018 2.5829597z"
+                      stroke="#B0EAEA" stroke-width=".646875" />
+                    <path fill="#C1F2F4" fill-rule="nonzero"
+                      d="M26.4948799 99.316549H10.7044895V25.9604952h15.7903904z" />
+                    <path
+                      d="M18.5489489 91.6215247c1.4237238 0 2.7180181-1.1623319 2.7180181-2.7121077V36.2170404c0-1.4206278-1.1648649-2.7121077-2.7180181-2.7121077-1.4237237 0-2.718018 1.1623319-2.718018 2.7121077V89.038565c0 1.4206278 1.2942943 2.5829597 2.718018 2.5829597z"
+                      stroke="#B0EAEA" stroke-width=".646875" />
+                    <path d="M128.822823 49.0026906v41.3273542" stroke="#C1F2F4" stroke-width=".646875" />
+                    <path fill="#19A1F4" fill-rule="nonzero"
+                      d="M169.17888332 180.0493494h-65.8666667v-12.16h65.8666667z" />
+                    <path fill="#0D2451" fill-rule="nonzero"
+                      d="M180.195191 167.8803369h-65.8666667v-12.16h65.8666667z" />
+                    <path
+                      d="M114.2666667 155.8114286h65.8666666V160.48c-2.0583333-.5428571-5.3083333-1.1942857-9.2083333-1.3028571-10.5083333-.3257143-12.4583333 3.5828571-20.9083333 3.9085714-11.2666667.5428571-13.65-6.1885714-25.2416667-4.56-4.55.6514286-8.2333333 2.1714286-10.6166667 3.3657143.1083334-2.0628572.1083334-4.1257143.1083334-6.08z"
+                      fill="#071D3F" fill-rule="nonzero" />
+                    <path fill="#FFC871" fill-rule="nonzero"
+                      d="M175.97604099 155.85214317h-65.8666667v-12.16h65.8666667z" />
+                    <path
+                      d="M116.7583333 152.66285714H169.3c1.4083333 0 2.4916667-1.08571428 2.4916667-2.49714285v-.76c0-1.41142858-1.0833334-2.49714286-2.4916667-2.49714286h-52.5416667c-1.4083333 0-2.4916666 1.08571428-2.4916666 2.49714286v.76c0 1.30285714 1.1916666 2.49714285 2.4916666 2.49714285z"
+                      stroke="#F5A73B" stroke-width=".54143888" />
+                    <path
+                      d="M159.0083333 167.9714286v12.16m1.8416667-12.16v12.16m-50.91666667-12.16v12.16m1.84166667-12.16v12.16"
+                      stroke="#1490ED" stroke-width=".54143888" />
+                    <path
+                      d="M104.7295186 179.9239631c8.203125 0 14.5217483-7.0075576 13.745777-15.000553l-1.7736486-17.62838706H92.86824324l-1.77364865 17.62838706c-.88682432 7.9929954 5.43179901 15.000553 13.63492401 15.000553z"
+                      fill="#F46C69" fill-rule="nonzero" />
+                    <path
+                      d="M97.9674831 153.20764977H86.99303209c-1.44108952 0-2.66047297 1.20442396-2.66047297 2.6278341v9.30691243c0 4.1607373 3.43644426 7.5550231 7.6488598 7.5550231h5.98606418"
+                      stroke="#EA5959" stroke-width=".5372551" />
+                    <path
+                      d="M104.7295186 179.9239631c-8.203125 0-14.52174833-7.0075576-13.74577705-15.000553l1.55194257-15.00055296c2.77132598.32847927 6.54032938 1.31391705 8.53568408 4.27023042 3.6581504 5.25566824-1.7736486 12.26322584 1.3302365 16.64294934 1.4410896 1.9708755 4.7666808 3.832258 13.8566301 2.6278341-.8868243 1.313917-3.2147382 4.3797235-7.4271537 5.6936405-1.2193835.5474655-2.660473.7664516-4.1015625.7664516z"
+                      fill="#EA5959" fill-rule="nonzero" />
+                    <g transform="translate(9 74)">
+                      <path
+                        d="M16.6833333.41153846c4.6878788 0 8.6863637 3.42948718 9.3757576 8.09358975l1.6545455 10.97435899H5.79090909L7.44545455 8.50512821C7.9969697 3.84102564 11.9954545.41153846 16.6833333.41153846z"
+                        fill="#19A1F4" fill-rule="nonzero" />
+                      <path fill="#19A1F4" fill-rule="nonzero"
+                        d="M79.4632691 19.51885704H16.5905418V.45090834h62.8727273z" />
+                      <path
+                        d="M79.4181818.41153846c4.6878788 0 8.6863637 3.42948718 9.3757576 8.09358975l1.6545454 10.97435899H68.5257576L70.180303 8.50512821c.5515152-4.66410257 4.55-8.09358975 9.2378788-8.09358975z"
+                        fill="#1490ED" fill-rule="nonzero" />
+                      <path d="M63.8378788 10.0141026H.82727273" stroke="#F5A73B" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path d="M79.4181818 10.0141026h-15.580303" stroke="#FFD385" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path d="M35.5727273 10.0141026v90.2641024" stroke="#F5A73B" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path fill="#FFD385" fill-rule="nonzero"
+                        d="M60.7488431 105.661677H10.4230855v-5.35h50.3257576z" />
+                      <path d="M53.0833333 97.2602564H17.9242424" stroke="#F5A73B" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <path d="M79.4181818 19.4794872v22.4974359" stroke="#FFD385" stroke-width=".68710311"
+                        stroke-linecap="round" />
+                      <ellipse fill="#FFD385" fill-rule="nonzero" cx="79.4181818" cy="43.8974359" rx="2.34393939"
+                        ry="2.33205128" />
+                    </g>
+                  </g>
+                </svg>
+              </figure>
+              <div class="flex flex-col">
+                <div class="flex items-center space-x-2">
+                  <span class="px-2 py-1 text-xs font-semibold text-blue-700 bg-blue-100 rounded-full">Guide</span>
+                  <span class="w-2 h-2 bg-blue-600 rounded-full"></span>
+                </div>
+                <h3 class="mt-2 text-lg font-semibold " itemprop="name">How to Raise GPA</h3>
+                <p class="mt-1 text-sm  text-gray-600" itemprop="description">Discover the most effective
+                  ways to bring
+                  up—<em>and keep up</em>—your GPA.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div class="container mx-auto">
+    <section class="min-h-[70vh] lg:h-[70vh]">
+      <div class="bg-base-100 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <h2 class="text-base font-semibold leading-7 text-blue-700">FAQ</h2>
+            <p class="mt-2 text-3xl font-bold font-body tracking-tight text-gray-900 sm:text-2xl">Everything you need to
+              know about GpaCalculator
+            </p>
+            <p class="mt-6 lg:text-2xl text-xl  leading-8 text-gray-600">GPAs can be complicated, so we've compiled a
+              list of the
+              most
+              common queries. What is a good GPA? What is the average
+              GPA? Discover answers to these and more.</p>
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700">
+                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" aria-hidden="true">
+                      <path
+                        d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 4h4m-4 0H8m0 0V6m4-2a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0V6zm-4 0a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0V6zm-2 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 2H8v2h4v-2zm-4 0v2h4v-2H8zM8 15l2-2 2 2m-2-2v4"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  What is an Average GPA?
+                </dt>
+                <a href="" title="Read more">
+                  <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris.
+                    Tincidunt
+                    mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+                  <svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700">
+                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" aria-hidden="true">
+                      <path
+                        d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 4h4m-4 0H8m0 0V6m4-2a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0V6zm-4 0a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0V6zm2 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 2H8v2h4v-2zm-4 0v2h4v-2H8z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  What is a Good GPA?
+                </dt>
+                <a href="" title="Read more">
+                  <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris.
+                    Tincidunt
+                    mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+                  <svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700">
+                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1 16h2v-2h-2v2zm-1-4h2V7H9v7zm4 0h2V7h-2v7zm2-10h-4v2h4V4z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  What is Cumulative GPA?
+                </dt>
+                <a href="" title="Read more">
+                  <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris.
+                    Tincidunt
+                    mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+                  <svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-700">
+                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" aria-hidden="true">
+                      <path d="M3 1H8V2H16V1H21V4H3V1ZM3 5H21V20H3V5ZM5 8H19V10H5V8ZM5 11H19V13H5V11ZM5 14H19V16H5V14Z"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  What is the Highest GPA?
+                </dt>
+                <a href="" title="Read more">
+                  <dd class="mt-2 text-base leading-7 text-gray-600">Arcu egestas dolor vel iaculis in ipsum mauris.
+                    Tincidunt
+                    mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.</dd>
+                  <svg class="w-5 h-5 inline-block ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="xl:mt-52">
+    <div class="py-16 bg-base-200">
+      <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <div class="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          <div class="md:5/12 lg:w-5/12">
+            <img src="image4.svg" alt="image" loading="lazy" width="" height="">
+          </div>
+          <div class="md:7/12 lg:w-6/12">
+            <h2 class="text-2xl text-gray-900 font-bold md:text-4xl">About Gpa Calculators</h2>
+            <p class="mt-6 lg:text-2xl text-xl  text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Eum omnis voluptatem
+              accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat
+              expedita consequatur! Officiis id consequatur atque doloremque!</p>
+            <p class="mt-4 lg:text-2xl text-xl  text-gray-600"> Nobis minus voluptatibus pariatur dignissimos libero
+              quaerat iure expedita
+              at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- component -->
+  <footer class="bg-darkBlue">
+    <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div>
+          <img src="img/icons8-gpa-calculator-100.png" class="mr-5 h-6 sm:h-9 text-gray-300" alt="logo" />
+          <p class="max-w-xs mt-4 text-sm text-gray-100">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+          </p>
+          <div class="flex mt-8 space-x-6 text-amber-300 transition-all duration-[250ms] ease-out">
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Facebook </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Instagram </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Twitter </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> GitHub </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+            <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+              <span class="sr-only"> Dribbble </span>
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fillRule="evenodd"
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                  clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="font-medium text-gray-300">
+              Company
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-100">
+              <a class="hover:opacity-75" href> About </a>
+              <a class="hover:opacity-75" href> Meet the Team </a>
+              <a class="hover:opacity-75" href> History </a>
+              <a class="hover:opacity-75" href> Careers </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium text-gray-300">
+              Services
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-100">
+              <a class="hover:opacity-75" href> 1on1 Coaching </a>
+              <a class="hover:opacity-75" href> Company Review </a>
+              <a class="hover:opacity-75" href> Accounts Review </a>
+              <a class="hover:opacity-75" href> HR Consulting </a>
+              <a class="hover:opacity-75" href> SEO Optimisation </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium text-gray-300">
+              Helpful Links
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-100">
+              <a class="hover:opacity-75" href> Contact </a>
+              <a class="hover:opacity-75" href> FAQs </a>
+              <a class="hover:opacity-75" href> Live Chat </a>
+            </nav>
+          </div>
+          <div>
+            <p class="font-medium text-gray-300">
+              Legal
+            </p>
+            <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-100">
+              <a class="hover:opacity-75" href> Privacy Policy </a>
+              <a class="hover:opacity-75" href> Terms &amp; Conditions </a>
+              <a class="hover:opacity-75" href> Returns Policy </a>
+              <a class="hover:opacity-75" href> Accessibility </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <p class="mt-8 text-xs text-gray-100">
+        © 2022 Comany Name
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

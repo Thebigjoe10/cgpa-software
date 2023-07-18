@@ -1,3 +1,6 @@
+const gradeTable = document.getElementById("gradeTable");
+const gradeTableBody = document.getElementById("gradeTableBody");
+
 document.getElementById("addSubjectBtn").addEventListener("click", addSubject);
 document
   .getElementById("calculateGPABtn")
@@ -12,15 +15,14 @@ function addSubject() {
   const creditUnits = parseInt(document.getElementById("courseunit").value);
   const semester = document.getElementById("semester").value;
 
-  const table = document.getElementById("gradeTable");
-  const row = table.insertRow();
+  const row = gradeTableBody.insertRow();
 
   row.insertCell().textContent = subjectName;
   row.insertCell().textContent = grade.toString();
   row.insertCell().textContent = creditUnits.toString();
   row.insertCell().textContent = semester;
 
-  // clear input fields
+  // Clear input fields
   document.getElementById("subjectName").value = "";
   document.getElementById("grade").value = "";
   document.getElementById("courseunit").value = "";
@@ -28,18 +30,21 @@ function addSubject() {
 }
 
 function calculateGPA() {
-  const rows = Array.from(document.querySelectorAll("#gradeTable tr"));
+  const rows = Array.from(
+    document.querySelectorAll("#gradeTableBody tr gradeTable")
+  );
 
   let totalGradepoints = 0;
   let totalCreditUnits = 0;
 
-  for (let i = 1; i < rows.length; i++) {
+  for (let i = 0; i < rows.length; i++) {
     const cells = rows[i].cells;
 
     const grade = cells[1].textContent.toLowerCase();
-    const creditUnits = parseInt(cells[2].textContent);
+    const creditUnits = parseInt(cells[3].textContent);
 
     let gradePoints = 0;
+
     if (grade === "a") {
       gradePoints = 5.0;
     } else if (grade === "b+") {
@@ -65,27 +70,30 @@ function calculateGPA() {
     totalGradepoints += gradePoint;
     totalCreditUnits += creditUnits;
   }
+
   const gpa = totalGradepoints / totalCreditUnits;
 
-  //display gpa result
+  // Display GPA result
   const gpaResult = document.getElementById("gpaResult");
   gpaResult.textContent = `GPA: ${gpa.toFixed(2)}`;
 }
 
 function calculateCGPA() {
-  const rows = Array.from(document.querySelectorAll("#gradeTable tr"));
+  const rows = Array.from(
+    document.querySelectorAll("#gradeTableBody tr gradeTable")
+  );
 
   let firstSemesterGradePoints = 0;
   let firstSemesterCreditUnits = 0;
   let secondSemesterGradePoints = 0;
   let secondSemesterCreditUnits = 0;
 
-  for (let i = 1; i < rows.length; i++) {
+  for (let i = 0; i < rows.length; i++) {
     const cells = rows[i].cells;
 
     const grade = cells[1].textContent.toLowerCase();
-    const creditUnits = parseInt(cells[2].textContent);
-    const semester = cells[3].textContent.toLowerCase();
+    const creditUnits = parseInt(cells[3].textContent);
+    const semester = cells[4].textContent.toLowerCase();
 
     let gradePoints = 0;
 
@@ -119,14 +127,13 @@ function calculateCGPA() {
       secondSemesterCreditUnits += creditUnits;
     }
   }
-  const firstSemesterGPA = firstSemesterGradePoints / firstSemesterCreditUnits;
 
+  const firstSemesterGPA = firstSemesterGradePoints / firstSemesterCreditUnits;
   const secondSemesterGPA =
     secondSemesterGradePoints / secondSemesterCreditUnits;
-
   const cgpa = (firstSemesterGPA + secondSemesterGPA) / 2;
 
-  //display gpa result
+  // Display CGPA result
   const cgpaResult = document.getElementById("cgpaResult");
   cgpaResult.textContent = `CGPA: ${cgpa.toFixed(2)}`;
 }

@@ -1,0 +1,21 @@
+{
+  "name": "cgpa-software",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000c\u0000g\u0000p\u0000a\u0000-\u0000-\u0000-\u0000g\u0000p\u0000a\u0000-\u0000c\u0000a\u0000l\u0000c\u0000u\u0000l\u0000a\u0000t\u0000o\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "daisyui": "^3.1.7",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24"
+  }
+}

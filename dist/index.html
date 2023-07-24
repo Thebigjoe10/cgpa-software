@@ -22,6 +22,61 @@
     .border-b-2 {
       border-bottom-width: 2px;
     }
+
+    #myModal {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+
+    .p-8 {
+      padding: 2rem;
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .mt-4 {
+      margin-top: 1rem;
+    }
+
+    .bg-gray-300 {
+      background-color: #d1d5db;
+    }
+
+    .hover\:bg-gray-400:hover {
+      background-color: #9ca3af;
+    }
+
+    .text-white {
+      color: #fff;
+    }
+
+    .font-bold {
+      font-weight: 700;
+    }
+
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .rounded {
+      border-radius: 0.25rem;
+    }
   </style>
 
 </head>
@@ -119,34 +174,31 @@
               device and completely free!
             </p>
             <!-- Your existing button -->
-            <button id="openModalBtn"
-              class="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
+            <a href="#" id="openModalBtn"
+              class="btn group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow">
               <div
                 class="absolute inset-0 w-3 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full">
               </div>
               <span class="relative text-black group-hover:text-white">Get Started</span>
-            </button>
-
-            <!-- Modal -->
-            <div id="myModal" class="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <div class="modal-content bg-white p-8 rounded-lg shadow-lg">
-                <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-600 hover:text-gray-800">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-                </button>
-                <!-- Add your signup/login form or content here -->
-                <!-- For simplicity, I'll just add some text -->
-                <p>Please sign up or log in to continue.</p>
-              </div>
-            </div>
-
+            </a>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <div id="myModal" class="fixed inset-0 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg p-8">
+      <h2 class="text-2xl font-bold mb-4">Login or Sign Up</h2>
+      <!-- Add your login/signup form or content here -->
+      <form>
+        <!-- Login or signup form fields -->
+      </form>
+      <button id="closeModalBtn" class="mt-4 bg-gray-300 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded">
+        Close
+      </button>
+    </div>
+  </div>
+
   <div class="pb-20 border-b-2"></div>
   <section>
     <div class="hero min-h-[70vh] lg:h-[70vh] bg-base-100">
@@ -722,15 +774,14 @@
           </div>
         </div>
       </div>
-     <div class="mt-8 text-xs text-gray-100">
-              <p>
-                Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script> All rights reserved | This website is
-                developed
-                with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href=""
-                  target="_blank">Joe Ejiro</a>
-              </p>
-            </div>
+      <div class="mt-8 text-xs text-gray-100">
+        <p>
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved | This website is
+          developed
+          with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Joe Codes</a>
+        </p>
+      </div>
     </div>
   </footer>
   <script src="js-files/main.js"></script>
